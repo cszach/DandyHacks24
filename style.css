@@ -32,3 +32,11 @@ body {
     margin-right: 0px;
     font-style: italic;
 }
+
+.faq > div {
+    display: flex;
+}
+
+.faq > div > div {
+    flex: 1;
+}
