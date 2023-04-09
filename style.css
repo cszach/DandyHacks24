@@ -1,4 +1,33 @@
 body {
-    width: 720px;
+    width: 1080px;
     margin: 0 auto;
+}
+
+.tracks > div, .side-challenges > div {
+    display: flex;
+    gap: 48px;
+}
+
+.tracks section, .side-challenges section {
+    flex: 1;
+}
+
+.tracks section h3, .tracks section p,
+.side-challenges section h3, .side-challenges section p {
+    text-align: center;
+}
+
+.past-projects > div {
+    display: flex;
+    gap: 48px;
+}
+
+.past-projects section {
+    flex: 1;
+}
+
+.past-projects blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-style: italic;
 }
