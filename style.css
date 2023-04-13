@@ -1,0 +1,66 @@
+body {
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 64px;
+
+    background-color: aquamarine;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    background-color: aqua;
+}
+
+.buttons a:nth-child(2) {
+    margin-left: 24px;
+}
+
+.tracks > div, .side-challenges > div {
+    display: flex;
+    gap: 48px;
+}
+
+.tracks section, .side-challenges section {
+    flex: 1;
+}
+
+.tracks section h3, .tracks section p,
+.side-challenges section h3, .side-challenges section p {
+    text-align: center;
+}
+
+.past-projects > div {
+    display: flex;
+    gap: 48px;
+}
+
+.past-projects section {
+    flex: 1;
+}
+
+.past-projects blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-style: italic;
+}
+
+.faq > div {
+    display: flex;
+}
+
+.faq > div > div {
+    flex: 1;
+}
