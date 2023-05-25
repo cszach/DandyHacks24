@@ -2,6 +2,11 @@ body {
     width: 1080px;
     margin: 0 auto;
     font-size: 20px;
+    background-color: #5e38be;
+    background-image: url("img/website-bg.svg");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .buttons {
