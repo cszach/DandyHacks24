@@ -55,6 +55,10 @@ h2 {
     font-size: 3em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 .buttons {
     display: flex;
     font-weight: 700;
@@ -91,6 +95,44 @@ h2 {
 
 }
 
+.landing nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+
+    background: var(--deep-purple);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing nav h3 {
+    font-family: "Katahdin Round", sans-serif;
+}
+
+.landing nav > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.landing nav > div a {
+    /* font-family: "Fivo Sans", sans-serif; */
+    font-weight: 700;
+
+    color: var(--lavender);
+    text-decoration: none;
+}
+
 .landing .hero {
     display: flex;
     align-items: center;
@@ -99,6 +141,12 @@ h2 {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.landing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .landing .hero > div {
