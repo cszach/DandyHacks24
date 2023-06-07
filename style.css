@@ -1,31 +1,209 @@
+@font-face {
+    font-family: "Katahdin Round";
+    src: url(fonts/katahdin-round/KatahdinRound.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Fivo Sans";
+    font-weight: 400;
+    src: url("fonts/fivo-sans/FivoSans/FivoSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Fivo Sans";
+    font-weight: 700;
+    src: url("fonts/fivo-sans/FivoSans/FivoSans-Bold.otf") format("opentype");
+}
+
+:root {
+    --lavender: #e5ccff;
+    --purple: #b673eb;
+    --deep-purple: #1b002c;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    width: 1080px;
-    margin: 0 auto;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    isolation: isolate;
+
+    position: relative;
+
+    font-size: 16px;
+    font-family: "Fivo Sans", sans-serif;
+    color: #e5ccff;
+
+    background: var(--deep-purple);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Katahdin Round", sans-serif;
+    color: var(--lavender);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 .buttons {
     display: flex;
+    font-weight: 700;
 }
 
 .buttons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 64px;
+    padding: 20px 40px;
+    gap: 10px;
 
-    background-color: aquamarine;
-    border-radius: 4px;
+    border-radius: 30px;
     text-decoration: none;
 }
 
-.buttons a:hover {
-    background-color: aqua;
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("img/website-bg.svg");
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+
 }
 
-.buttons a:nth-child(2) {
-    margin-left: 24px;
+.landing nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+
+    background: var(--deep-purple);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing nav h3 {
+    font-family: "Katahdin Round", sans-serif;
+}
+
+.landing nav > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.landing nav > div a {
+    /* font-family: "Fivo Sans", sans-serif; */
+    font-weight: 700;
+
+    color: var(--lavender);
+    text-decoration: none;
+}
+
+.landing .hero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing .hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.landing .hero h1 {
+    line-height: 77px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing .hero h2 {
+    line-height: 48px;
+
+    color: var(--purple);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.landing .buttons a {
+    font-size: 1.5em;
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.landing .buttons > a:first-child {
+    background-color: var(--lavender);
+}
+
+.landing .buttons > a:nth-child(2) {
+    background-color: var(--purple);
 }
 
 .tracks > div, .side-challenges > div {
@@ -64,3 +242,48 @@ body {
 .faq > div > div {
     flex: 1;
 }
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+
+    width: 1440px;
+    height: 171px;
+
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 4;
+}
+
+#footer .email {
+
+}
+
+#footer .content {
+    text-align: center;
+    border-bottom: 1px;
+    padding: 0 0 30px;
+    margin: 0 0 0px;
+}
+
+#footer .social {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+
+#footer .coc {
+    
+}
+
+
+
+
+
+
