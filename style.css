@@ -66,6 +66,13 @@ h3 {
   font-size: 1.5em;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .buttons {
   display: flex;
   font-weight: 700;
@@ -200,6 +207,8 @@ h3 {
 
 .landing .buttons a {
   font-size: 1.5em;
+
+  color: var(--deep-purple);
 
   flex: none;
   flex-grow: 0;
