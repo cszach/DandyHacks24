@@ -20,6 +20,7 @@
   --purple: #b673eb;
   --deep-purple: #1b002c;
   --violet: #5e38be;
+  --indigo: #241d63;
 }
 
 * {
@@ -210,6 +211,36 @@ h3 {
 
 .landing .buttons>a:nth-child(2) {
   background-color: var(--purple);
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 113px 150px;
+  gap: 77px;
+
+  background: var(--violet);
+}
+
+.about>div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 53px;
+}
+
+.about>div:nth-child(2) {
+  width: 407px;
+  height: 441px;
+
+  background: var(--indigo);
+  border-radius: 30px;
+
+  flex: none;
 }
 
 .tracks>div,
