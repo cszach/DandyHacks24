@@ -345,7 +345,7 @@ h3 {
 .sponsoring>div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 100px;
 
   width: 100%;
