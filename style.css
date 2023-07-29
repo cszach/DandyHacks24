@@ -303,6 +303,10 @@ section .container {
   transition: height .5s ease-in-out;
 }
 
+.faq details summary {
+  line-height: 36px;
+}
+
 .faq details summary::marker {
   content: "";
 }
