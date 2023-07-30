@@ -262,7 +262,7 @@ section .container {
 
 .faq {
   background: url(img/website-bg2.png);
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -322,6 +322,12 @@ section .container {
   float: right;
 }
 
+.sponsoring {
+  background: url(img/website-bg2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 .sponsoring .container {
   display: flex;
   flex-direction: column;
@@ -332,10 +338,6 @@ section .container {
 
   box-sizing: border-box;
   width: 100%;
-
-  background: url(img/website-bg2.png);
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .sponsoring .container >div {
