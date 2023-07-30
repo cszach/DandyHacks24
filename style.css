@@ -78,7 +78,7 @@ a:active {
   font-weight: 700;
 }
 
-.buttons a {
+.buttons > a {
   display: flex;
   justify-content: center;
   align-items: center;
