@@ -1,248 +1,197 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DandyHacks 2023</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>DandyHacks 2023</h1>
-    Coming soon
-    <h2>November 3-5</h2>
-    <div class="buttons">
-      <a href="#">Register</a>
-      <a href="#">Join Discord</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DandyHacks 2023</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <h3>DandyHacks &OpenCurlyQuote;23</h3>
+    <div>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#sponsoring">Sponsoring</a>
     </div>
-    <section>
-      <h2>About</h2>
-      <p>
-        DandyHacks 2023 is the 11th celebration of hackers at the University of
-        Rochester. Join us for a beginner-friendly, inclusive, and free
-        in-person hackathon. Prepare ahead for: valuable learning experiences,
-        food, amazing prizes, swags, friends, companies, mentors, an excessive
-        amount of stickers, and 42 hours of fun.
-      </p>
-    </section>
-    <section class="tracks">
-      <h2>Tracks</h2>
-      <p>
-        Your project needs to be submitted into one of these tracks, or
-        "topics". Each track will have three winners and a different set of
-        prizes!
-      </p>
+    <a id="mlh-trust-badge" style="
+          display: block;
+          max-width: 100px;
+          min-width: 60px;
+          position: absolute;
+          right: 50px;
+          top: 100%;
+          width: 10%;
+          z-index: 10000;
+        "
+      href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+      target="_blank"><img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+        alt="Major League Hacking 2024 Hackathon Season" style="width: 100%" /></a>
+  </nav>
+  <section class="landing">
+    <div class="container">
       <div>
-        <section>
-          <h3>Sustainability</h3>
-          <p>
-            Hack for a greener future! Brainstorm and develop innovative
-            solutions to pressing environmental challenges, from reducing carbon
-            emissions to promoting eco-friendly habits.
-          </p>
-        </section>
-        <section>
-          <h3>Video Game</h3>
-          <p>
-            Ready, set, unleash your creativity! Whether it's a mobile game or a
-            virtual reality experience, the possibilities are endless.
-          </p>
-        </section>
-        <section>
-          <h3>Education</h3>
-          <p>
-            Revolutionize the way we learn! Come develop a solution that
-            promotes learning, access, and engagement for students like
-            yourself.
-          </p>
-        </section>
+        <div class="hero">
+          <img src="img/logo.png" alt="The logo of DandyHacks 2023" />
+          <div>
+            <h1>DandyHacks &OpenCurlyQuote;23</h1>
+            <h2>November 3-5</h2>
+          </div>
+        </div>
+        <div class="buttons">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf0fuT8o8gTrG9d8flxtpRD1JkOzHu8tEXG-wXM3KiNzhHRyw/viewform?usp=sf_link" target="_blank">Register</a>
+          <a href="https://discord.gg/SbNBkUK6Cr" target="_blank">Join Discord</a>
+        </div>
       </div>
-    </section>
-    <section class="side-challenges">
-      <h2>Side challenges</h2>
-      <p>
-        Your project will be automatically considered to win a side challenge,
-        and each side challenge will have one winner.
-      </p>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
       <div>
-        <section>
-          <h3>Best Use of AI</h3>
-          <p>
-            Artificial intelligence (AI) is changing the world, and you should
-            too. With libraries like ml5.js and Tensorflow, the future is just a
-            few lines of code away.
-          </p>
-        </section>
-        <section>
-          <h3>Cybersecurity</h3>
-          <p>
-            With great power comes great responsibility. Make a project that
-            helps promote privacy and secure applications in cyberspace.
-          </p>
-        </section>
-        <section>
-          <h3>Most Dandy Hack</h3>
-          <p>
-            The return of the infamous award given to the project with the best
-            UI/UX!
-          </p>
-        </section>
+        <h2>What is DandyHacks?</h2>
+        <p>
+          DandyHacks is the University of Rochester’s annual 42-hour long
+          hackathon. This year will be our 11th anniversary, and we’re so excited
+          to hold this amazing milestone in-person! As a fully student-led
+          organization at a tier 1 research university, we embody our school’s
+          values, encouraging participants to question the world and learn more.
+        </p>
+        <p>
+          DandyHacks is very beginner-friendly, and we welcome students from all
+          backgrounds and majors. Participating in DandyHacks is not just about
+          winning; it is about collaborating with peers, learning from mentors,
+          and gaining valuable experiences. This year, DandyHacks will take place
+          on Nov 3-5 in the Feldman Ballroom. We hope to see you there!
+        </p>
       </div>
-    </section>
-    <section>
-      <h2>Schedule</h2>
-    </section>
-    <section class="past-projects">
-      <h2>Past projects</h2>
-      <div>
-        <section>
-          <img src="img/goodsoup.png" alt="GoodSoup" />
-          <h3>GoodSoup</h3>
-          <p>The dining hall recipe allergen analysis</p>
-          <blockquote cite="#">
-            <p>
-              “I crawled recipes data from the University of Rochester's Dining
-              Service’s website and built Flask API to connect backend analysis
-              and Wix frontend with Python.”
-            </p>
-            <footer>‒Linh</footer>
-          </blockquote>
-        </section>
-        <section>
-          <img src="img/project-eleos.png" alt="Project Eleos" />
-          <h3>Project Eleos</h3>
-          <p>
-            Project Eleos is our attempt at solving the issue of computational
-            power and its availability to the average person and or businesses.
-          </p>
-          <blockquote cite="#">
-            <p>
-              “We are proud of getting this project done without a single energy
-              drink!”
-            </p>
-            <footer>‒Nate</footer>
-          </blockquote>
-        </section>
-        <section>
-          <img src="img/2-tris.jpg" alt="2-Tris" />
-          <h3>2-Tris</h3>
-          <p>
-            A 2d co-op shooter version of Tetris featuring 3 classically
-            composed pieces.
-          </p>
-          <blockquote cite="#">
-            <p>
-              “It was my first time using python and pygame, and I really
-              enjoyed the challenge and learning experience.”
-            </p>
-            <footer>‒Reidy</footer>
-          </blockquote>
-        </section>
-      </div>
-    </section>
-    <section>
-      <h2>Gallery</h2>
-    </section>
-    <section class="faq">
+      <div></div>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <div class="container">
       <h2>FAQ</h2>
+      <div class="buttons">
+        <details>
+          <summary>What is a hackathon?</summary>
+          <p>
+            A hackathon is an event in which people meet to collaboratively
+            build their ideas using technology.
+          </p>
+        </details>
+        <details>
+          <summary>Who is eligible to participate?</summary>
+          <p>
+            Any graduate or undergraduate student over the age of 18 enrolled in
+            a North American institution of higher education is eligible. All hackers must be
+            vaccinated and are encouraged to mask while indoors.
+          </p>
+        </details>
+        <details>
+          <summary>Do I have to pay to participate?</summary>
+          <p>
+            Hackers do not have to pay to participate. Hackers just need to
+            register and check-in upon arrival. Registration will open up in
+            early September, but you may join discord and follow us on Instagram
+            <a href="https://www.instagram.com/dandyhacks">@dandyhacks</a> to
+            stay up to date on all things DandyHacks!
+          </p>
+        </details>
+        <details>
+          <summary>Will the hackathon be in-person or virtual?</summary>
+          <p>
+            The hackathon will be fully in-person with a couple online
+            workshops.
+          </p>
+        </details>
+        <details>
+          <summary>
+            What safety protocols are in place to protect the community?
+          </summary>
+          <p>
+            <a href="https://www.rochester.edu/coronavirus-update/">University of Rochester COVID-19 protocols</a>.
+          </p>
+        </details>
+        <details>
+          <summary>Will I work individually or with a team?</summary>
+          <p>
+            You can work individually or with a team. Each team can have a
+            maximum of 4 people, and don’t worry if you don’t have a team yet!
+            We will make time and communication channels for you to find a team.
+          </p>
+        </details>
+        <details>
+          <summary>Can I start hacking before the event?</summary>
+          <p>
+            You may not start hacking before the event, but you can start
+            planning and gathering resources.
+          </p>
+        </details>
+        <details>
+          <summary>I still have questions…</summary>
+          <p>
+            Reach out to us at greetings@dandyhacks.net or reach out to us on
+            Instagram
+            <a href="https://www.instagram.com/dandyhacks">@dandyhacks</a>!
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section class="sponsoring" id="sponsoring">
+    <div class="container">
+      <h2>Sponsoring</h2>
       <div>
         <div>
-          <details>
-            <summary>What is a hackathon?</summary>
-            <p>
-              A hackathon is an event in which people meet to collaboratively
-              build their ideas using technology.
-            </p>
-          </details>
-          <details>
-            <summary>Who is eligible to participate?</summary>
-            <p>
-              Any graduate or undergraduate student over the age of 18 enrolled
-              in a North American institution is eligible. All hackers must be
-              vaccinated and are encouraged to mask while indoors.
-            </p>
-          </details>
-          <details>
-            <summary>Do I have to pay to participate?</summary>
-            <p>
-              Hackers do not have to pay to participate. Hackers just need to
-              register and check-in upon arrival. Registration will open up in
-              early September, but you may join discord and follow us on
-              Instagram
-              <a href="https://www.instagram.com/dandyhacks">@dandyhacks</a> to
-              stay up to date on all things DandyHacks!
-            </p>
-          </details>
-          <details>
-            <summary>Will the hackathon be in-person or virtual?</summary>
-            <p>
-              The hackathon will be fully in-person with a couple online
-              workshops.
-            </p>
-          </details>
+          <h3>What does a sponsor do?</h3>
+          <p>
+            Sponsors enable us to:
+          <ul>
+            <li>Keep the entire event free for all of our attendees!</li>
+            <li>Send us mentors and workshop leaders and gain
+              recognition from our hackers</li>
+          </ul>
+          </p>
         </div>
         <div>
-          <details>
-            <summary>
-              What safety protocols are in place to protect the community?
-            </summary>
-            <p>
-              <a href="https://www.rochester.edu/coronavirus-update/"
-                >University of Rochester COVID-19 protocols</a
-              >.
-            </p>
-          </details>
-          <details>
-            <summary>Will I work individually or with a team?</summary>
-            <p>
-              You can work individually or with a team. Each team can have a
-              maximum of 4 people, and don’t worry if you don’t have a team yet!
-              We will make time and communication channels for you to find a
-              team.
-            </p>
-          </details>
-          <details>
-            <summary>Can I start hacking before the event?</summary>
-            <p>
-              You may not start hacking before the event, but you can start
-              planning and gathering resources.
-            </p>
-          </details>
-          <details>
-            <summary>I still have questions…</summary>
-            <p>
-              Reach out to us at greetings@dandyhacks.net or reach out to us on
-              Instagram
-              <a href="https://www.instagram.com/dandyhacks">@dandyhacks</a>!
-            </p>
-          </details>
+          <h3>Why sponsor?</h3>
+          <p>As a sponsor, you will be able to:</p>
+          <ul>
+            <li>
+              Connect with top students, and get early access to resumes and
+              portfolios.
+            </li>
+            <li>
+              Showcase your products and see talented students make cool hacks
+              with them.
+            </li>
+            <li>
+              Inspire the next generation of developers to find pride and joy in
+              building awesome things.
+            </li>
+            <li>Attract next generation talent for tech development programs.</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>Sponsoring</h2>
-      <h3>What does a sponsor do?</h3>
-      <p>
-        Sponsors enable us to keep the entire event free for all of our
-        attendees! Sponsors can send us mentors and workshop leaders and gain
-        recognition from our hackers.
-      </p>
-      <h3>Why sponsor?</h3>
-      <p>As a sponsor, you will be able to:</p>
-      <ul>
-        <li>
-          Connect with top students, and get early access to resumes and
-          portfolios.
-        </li>
-        <li>
-          Showcase your products and see talented students make cool hacks with
-          them.
-        </li>
-        <li>
-          Inspire the next generation of developers to find pride and joy in
-          building awesome things.
-        </li>
-        <li>Attract next generation talent for tech development programs.</li>
-      </ul>
-    </section>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <div class="contact">
+      <span>greetings@dandyhacks.net</span>
+      <div class="socials">
+        <a href="mailto:greetings@dandyhacks.net"><img src="img/social/mail.svg"></a>
+        <a href="https://www.instagram.com/dandyhacks"><img src="img/social/instagram.svg"></a>
+        <a href="https://www.facebook.com/DandyHacks"><img src="img/social/facebook.svg"></a>
+        <a href="https://twitter.com/dandyhacks"><img src="img/social/twitter.svg"></a>
+      </div>
+    </div>
+    <div class="coc">
+      <a href="http://mlh.io/code-of-conduct" target="_blank"><span>MLH Code of Conduct</span></a>
+      <span>© 2023 DandyHacks</span>
+    </div>
+  </footer>
+</body>
+
 </html>
