@@ -193,6 +193,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 section .container {
@@ -255,32 +256,30 @@ section .container {
   font-style: italic;
 }
 
-.faq {
-  background: url(img/website-bg2.png);
-  background-position: top;
-  background-repeat: no-repeat;
+.faq-and-sponsoring {
+  background-image: url(img/website-bg2.png);
+  background-repeat: repeat-y;
 }
 
-.faq .container {
+.faq-and-sponsoring > .faq-container { /* containers */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
   box-sizing: border-box;
   gap: 13px;
-
-  width: 100%;
 }
 
-.faq .buttons {
+.faq-and-sponsoring .buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px 39px;
   gap: 22px;
+  width: 100%;
 }
 
-.faq details {
+.faq-and-sponsoring details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -299,16 +298,16 @@ section .container {
   transition: height .5s ease-in-out;
 }
 
-.faq details summary {
+.faq-and-sponsoring details summary {
   font-weight: 700;
   line-height: 36px;
 }
 
-.faq details summary::marker {
+.faq-and-sponsoring details summary::marker {
   content: "";
 }
 
-.faq details summary::after {
+.faq-and-sponsoring details summary::after {
   content: "";
   background: url(img/icons/plus.png);
   width: 36px;
@@ -317,13 +316,13 @@ section .container {
   float: right;
 }
 
-.sponsoring {
+/* .sponsoring {
   background: url(img/website-bg2.png);
   background-position: top;
   background-repeat: no-repeat;
-}
+} */
 
-.sponsoring .container {
+.sponsoring-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,7 +334,7 @@ section .container {
   width: 100%;
 }
 
-.sponsoring .container >div {
+.sponsoring-container >div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -344,7 +343,7 @@ section .container {
   width: 100%;
 }
 
-.sponsoring .container >div>div {
+.sponsoring-container >div>div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -435,7 +434,7 @@ footer .coc {
     padding: 20px 25px;
   } */
 
-  .faq summary {
+  .faq-and-sponsoring summary {
     display: flex;
     flex-direction: column;
     text-align: center;
