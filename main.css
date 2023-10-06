@@ -1,3 +1,7 @@
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
 @font-face {
   font-family: "Katahdin Round";
   src: url(fonts/katahdin-round/KatahdinRound.otf) format("opentype");
@@ -208,23 +212,14 @@ section .container {
   gap: 77px;
 }
 
-.about .container >div:first-child {
+.about .container >div {
   display: flex;
+  flex: 0 0 454px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 0px;
   gap: 53px;
-}
-
-.about .container >div:nth-child(2) {
-  width: 407px;
-  height: 441px;
-
-  background: var(--indigo);
-  border-radius: 30px;
-
-  flex: none;
 }
 
 .tracks>div,
@@ -377,6 +372,11 @@ footer {
 
   box-sizing: border-box;
   width: 100%;
+
+  background-image: url("img/sticker2-no_border.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 344px auto;
 }
 
 footer .contact {
