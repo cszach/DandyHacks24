@@ -9,12 +9,12 @@
 </head>
 
 <body class="font-sans text-lavender bg-deep-purple">
-  <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-5 py-5 lg:px-12 bg-deep-purple">
+  <nav class="fixed z-10 flex flex-row items-center justify-between flex-none w-full px-5 py-5 transition-transform ease-in-out lg:px-12 bg-deep-purple translate-y-0">
     <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
     <div>
       <input class="absolute z-20 w-8 h-8 opacity-0 peer lg:hidden" type="checkbox" />
       <img class="lg:hidden" src="img/icons/hamburger.png" />
-      <ul class="fixed top-0 right-0 z-10 flex flex-col h-full pt-16 text-3xl font-bold transition-transform ease-in-out gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
+      <ul class="fixed top-0 right-0 z-10 flex flex-col h-screen pt-16 text-3xl font-bold transition-transform ease-in-out gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
         <li class="text-right"><a href="#about">About</a></li>
         <li class="text-right"><a href="#faq">FAQ</a></li>
         <li class="hidden text-right lg:block"><a href="#sponsoring">Sponsoring</a></li>
@@ -212,16 +212,7 @@
       <span>© 2023 DandyHacks</span>
     </div>
   </footer>
-  <script>
-    let navigationLinks = document.querySelectorAll('nav li');
-    let hamburgerCheckbox = document.querySelector('nav .peer');
-
-    navigationLinks.forEach(navigationLink => {
-      navigationLink.addEventListener('click', e => {
-        hamburgerCheckbox.checked = false;
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
