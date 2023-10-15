@@ -38,4 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('overflow-hidden');
         }
     });
+
+    // particles.js
+
+    particlesJS.load('faq', 'assets/particlesjs-config.json');
 });
