@@ -10,10 +10,10 @@
 
 <body class="font-sans text-lavender bg-deep-purple">
   <nav class="fixed z-30 flex flex-row items-center justify-between flex-none w-full px-5 py-5 transition-transform lg:px-12 bg-deep-purple translate-y-0">
-    <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
+    <h3 class="text-2xl"><a href="#hero">DandyHacks &OpenCurlyQuote;23</a></h3>
     <div>
       <input class="absolute w-8 h-8 opacity-0 peer lg:hidden" type="checkbox" />
-      <div class="fixed top-0 left-0 w-screen h-screen bg-black opacity-0 pointer-events-none transition-opacity peer-checked:opacity-50 lg:hidden"></div>
+      <div class="fixed top-0 left-0 w-screen h-screen bg-black opacity-0 pointer-events-none peer-checked:pointer-events-auto transition-opacity peer-checked:opacity-50 lg:hidden"></div>
       <img class="lg:hidden" src="img/icons/hamburger.png" />
       <ul class="fixed top-0 right-0 z-30 flex flex-col justify-end h-screen py-16 text-3xl font-bold transition-transform gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
         <li class="text-right"><a href="#about">About</a></li>
@@ -36,7 +36,7 @@
         src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
         alt="Major League Hacking 2024 Hackathon Season" style="width: 100%" /></a>
   </nav>
-  <div class="flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-enchanted-forest bg-center-bottom">
+  <div id="hero" class="flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-enchanted-forest bg-center-bottom">
     <div class="flex flex-col gap-6 md:gap-0">
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-2.5">
         <img class="md:max-lg:h-1/2" src="img/logo.png" alt="The logo of DandyHacks 2023" />
