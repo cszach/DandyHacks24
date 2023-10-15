@@ -2750,6 +2750,29 @@ canvas {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2762,12 +2785,39 @@ canvas {
     gap: 0px;
   }
 
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:gap-2 {
     gap: 0.5rem;
   }
 
   .md\:gap-2\.5 {
     gap: 0.625rem;
+  }
+
+  .md\:bg-deep-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(27 0 44 / var(--tw-bg-opacity));
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:transition-none {
+    transition-property: none;
   }
 
   @media not all and (min-width: 1024px) {
@@ -2781,6 +2831,10 @@ canvas {
 
     .md\:max-lg\:h-1\/2 {
       height: 50%;
+    }
+
+    .md\:max-lg\:gap-8 {
+      gap: 2rem;
     }
   }
 }
@@ -2814,27 +2868,8 @@ canvas {
     display: flex;
   }
 
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .lg\:flex-\[0_0_454px\] {
     flex: 0 0 454px;
-  }
-
-  .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:flex-row {
@@ -2849,21 +2884,16 @@ canvas {
     gap: 3.5rem;
   }
 
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
   .lg\:gap-20 {
     gap: 5rem;
   }
 
-  .lg\:self-start {
-    align-self: flex-start;
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
-  .lg\:bg-deep-purple {
-    --tw-bg-opacity: 1;
-    background-color: rgb(27 0 44 / var(--tw-bg-opacity));
+  .lg\:self-start {
+    align-self: flex-start;
   }
 
   .lg\:bg-groundboi {
@@ -2944,10 +2974,6 @@ canvas {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:transition-none {
-    transition-property: none;
   }
 }
 
