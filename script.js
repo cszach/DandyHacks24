@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navigationLinks.forEach(navigationLink => {
       navigationLink.addEventListener('click', () => {
-        document.body.classList.remove('overflow-hidden');
-        hamburgerCheckbox.checked = false;
+          closeNavigationMenu();
       });
     });
 
@@ -42,6 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('overflow-hidden');
         }
     });
+
+    // Close navigation menu when the dark overlay is clicked on
+
+    const darkOverlay = navBar.querySelector('.bg-black');
+
+    darkOverlay.addEventListener('click', () => {
+        closeNavigationMenu();
+    });
+
+    function closeNavigationMenu() {
+        document.body.classList.remove('overflow-hidden');
+        hamburgerCheckbox.checked = false;
+    }
 
     // particles.js
 
