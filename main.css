@@ -27,14 +27,26 @@
 
 @layer utilities {
   details {
-    @apply lg:w-[923px] bg-purple text-deep-purple rounded-[30px] py-2.5 lg:px-12 px-4;
+    @apply lg:w-[923px] bg-purple text-deep-purple rounded-[30px] py-2.5 lg:px-12 px-4 pointer-events-auto;
   }
 
   details summary {
-    @apply flex items-center justify-between text-2xl font-bold after:float-right marker:content-none after:content-none after:w-9 after:h-9 after:justify-self-end;
+    @apply flex items-center justify-between text-2xl font-bold hover:cursor-pointer after:float-right marker:content-none after:content-none after:w-9 after:h-9 after:justify-self-end;
   }
 
   details p {
     @apply text-2xl;
+  }
+
+  canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #faq > div > * {
+    position: relative;
+    z-index: 10;
   }
 }

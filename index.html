@@ -9,12 +9,12 @@
 </head>
 
 <body class="font-sans text-lavender bg-deep-purple">
-  <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-5 py-5 lg:px-12 bg-deep-purple">
+  <nav class="fixed z-10 flex flex-row items-center justify-between flex-none w-full px-5 py-5 transition-transform ease-in-out lg:px-12 bg-deep-purple translate-y-0">
     <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
     <div>
       <input class="absolute z-20 w-8 h-8 opacity-0 peer lg:hidden" type="checkbox" />
       <img class="lg:hidden" src="img/icons/hamburger.png" />
-      <ul class="fixed top-0 right-0 z-10 flex flex-col h-full pt-16 text-3xl font-bold transition-transform ease-in-out gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
+      <ul class="fixed top-0 right-0 z-10 flex flex-col h-screen pt-16 text-3xl font-bold transition-transform ease-in-out gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
         <li class="text-right"><a href="#about">About</a></li>
         <li class="text-right"><a href="#faq">FAQ</a></li>
         <li class="hidden text-right lg:block"><a href="#sponsoring">Sponsoring</a></li>
@@ -49,7 +49,8 @@
       </div>
     </div>
   </div>
-  <div id="about" class="flex flex-row items-center justify-center bg-violet gap-[77px]">
+  <div class="flex flex-row items-center justify-center bg-violet gap-[77px]">
+    <div id="about" class="absolute bottom-16 lg:bottom-[150px]"></div>
     <img class="hidden lg:self-start lg:block" src="img/sticker2.png" />
     <div class="px-9 lg:px-0 lg:flex-[0_0_454px] flex flex-col gap-7 lg:gap-14 mb-16 lg:mb-[150px]">
       <h2 class="text-2xl lg:text-5xl">What is DandyHacks?</h2>
@@ -70,12 +71,12 @@
         </p>
       </div>
     </div>
-    <img class="hidden lg:block lg:relative b-[150px]" src="img/sticker1.png" />
+    <img class="hidden lg:block lg:relative lg:b-[150px]" src="img/sticker1.png" />
   </div>
-  <div id="faq" class="px-5 lg:bg-repeat-y lg:bg-center-top lg:bg-fireflies lg:px-0">
+  <div id="faq" class="relative px-5">
     <div class="flex flex-col items-center py-24 box-border gap-12 lg:gap-20">
       <h2 class="text-5xl">FAQS</h2>
-      <div class="flex flex-col px-10 py-4 lg:py-0 gap-5 lg:px-0">
+      <div class="flex flex-col px-10 py-4 pointer-events-none lg:py-0 gap-5 lg:px-0">
         <details>
           <summary>
             What is a hackathon?
@@ -212,16 +213,8 @@
       <span>© 2023 DandyHacks</span>
     </div>
   </footer>
-  <script>
-    let navigationLinks = document.querySelectorAll('nav li');
-    let hamburgerCheckbox = document.querySelector('nav .peer');
-
-    navigationLinks.forEach(navigationLink => {
-      navigationLink.addEventListener('click', e => {
-        hamburgerCheckbox.checked = false;
-      });
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
