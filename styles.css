@@ -671,14 +671,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 30;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
 .float-right {
   float: right;
 }
@@ -2041,6 +2033,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 2.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -2058,10 +2055,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pb-7 {
   padding-bottom: 1.75rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-left {
@@ -2302,10 +2295,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .bg-blend-normal {
@@ -2562,14 +2551,14 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
