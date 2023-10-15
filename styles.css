@@ -651,6 +651,30 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
 }
 
+.-top-\[150px\] {
+  top: -150px;
+}
+
+.-top-\[10px\] {
+  top: -10px;
+}
+
+.bottom-\[150px\] {
+  bottom: 150px;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -659,24 +683,12 @@ h1, h2, h3, h4, h5, h6 {
   isolation: auto;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
-}
-
-.z-30 {
-  z-index: 30;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .float-right {
@@ -828,10 +840,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-screen {
@@ -2709,10 +2717,6 @@ details p {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.peer:checked ~ .peer-checked\:overflow-hidden {
-  overflow: hidden;
-}
-
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
@@ -2722,6 +2726,10 @@ details p {
 @media (min-width: 1024px) {
   .lg\:relative {
     position: relative;
+  }
+
+  .lg\:bottom-\[150px\] {
+    bottom: 150px;
   }
 
   .lg\:mb-0 {
