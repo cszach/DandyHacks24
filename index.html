@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,10 +11,14 @@
 <body class="font-sans text-lavender bg-deep-purple">
   <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-5 py-5 lg:px-12 bg-deep-purple">
     <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
-    <div class="flex flex-row items-start hidden font-bold gap-16">
-      <a href="#about">About</a>
-      <a href="#faq">FAQ</a>
-      <a href="#sponsoring">Sponsoring</a>
+    <div>
+      <input class="absolute z-20 w-8 h-8 opacity-0 peer lg:hidden" type="checkbox" />
+      <img class="lg:hidden" src="img/icons/hamburger.png" />
+      <ul class="fixed top-0 right-0 z-10 flex flex-col h-full pt-16 text-3xl font-bold transition-transform ease-in-out gap-8 lg:flex-row lg:text-xl px-9 lg:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 lg:bg-deep-purple lg:translate-x-0 lg:w-fit lg:h-fit lg:relative lg:gap-16 lg:transition-none">
+        <li class="text-right"><a href="#about">About</a></li>
+        <li class="text-right"><a href="#faq">FAQ</a></li>
+        <li class="hidden text-right lg:block"><a href="#sponsoring">Sponsoring</a></li>
+      </ul>
     </div>
     <a id="mlh-trust-badge" style="
           display: block;
@@ -24,7 +28,6 @@
           right: 50px;
           top: 100%;
           width: 10%;
-          z-index: 10000;
         "
       href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
       target="_blank"><img
@@ -46,7 +49,7 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-row items-center justify-center bg-violet gap-[77px]">
+  <div id="about" class="flex flex-row items-center justify-center bg-violet gap-[77px]">
     <img class="hidden lg:self-start lg:block" src="img/sticker2.png" />
     <div class="px-9 lg:px-0 lg:flex-[0_0_454px] flex flex-col gap-7 lg:gap-14 mb-16 lg:mb-[150px]">
       <h2 class="text-2xl lg:text-5xl">What is DandyHacks?</h2>
@@ -69,7 +72,7 @@
     </div>
     <img class="hidden lg:block lg:relative b-[150px]" src="img/sticker1.png" />
   </div>
-  <div class="px-5 lg:bg-repeat-y lg:bg-center-top lg:bg-fireflies lg:px-0">
+  <div id="faq" class="px-5 lg:bg-repeat-y lg:bg-center-top lg:bg-fireflies lg:px-0">
     <div class="flex flex-col items-center py-24 box-border gap-12 lg:gap-20">
       <h2 class="text-5xl">FAQS</h2>
       <div class="flex flex-col px-10 py-4 lg:py-0 gap-5 lg:px-0">
@@ -160,7 +163,7 @@
         </details>
       </div>
     </div>
-    <div class="flex-col items-center hidden mb-24 lg:flex gap-20">
+    <div id="sponsoring" class="flex-col items-center hidden mb-24 lg:flex gap-20">
       <h2 class="text-5xl">Sponsoring</h2>
       <div class="flex flex-row gap-24">
         <div class="flex flex-col w-[434px] bg-violet rounded-3xl p-12 text-xl">
@@ -204,11 +207,21 @@
         <a href="https://twitter.com/dandyhacks"><img src="img/social/twitter.svg"></a>
       </div>
     </div>
-    <div class="flex flex-col items-center gap-5 mb-5 lg:mb-0">
+    <div class="flex flex-col items-center mb-5 gap-5 lg:mb-0">
       <a class="font-bold" href="http://mlh.io/code-of-conduct" target="_blank"><span>MLH Code of Conduct</span></a>
       <span>© 2023 DandyHacks</span>
     </div>
   </footer>
+  <script>
+    let navigationLinks = document.querySelectorAll('nav li');
+    let hamburgerCheckbox = document.querySelector('nav .peer');
+
+    navigationLinks.forEach(navigationLink => {
+      navigationLink.addEventListener('click', e => {
+        hamburgerCheckbox.checked = false;
+      });
+    });
+  </script>
 </body>
 
 </html>
