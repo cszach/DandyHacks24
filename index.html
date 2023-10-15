@@ -9,9 +9,9 @@
 </head>
 
 <body class="font-sans text-lavender bg-deep-purple">
-  <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-12 py-5 bg-deep-purple">
+  <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-5 py-5 lg:px-12 bg-deep-purple">
     <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
-    <div class="flex flex-row items-start font-bold gap-16">
+    <div class="flex flex-row items-start hidden font-bold gap-16">
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
       <a href="#sponsoring">Sponsoring</a>
@@ -32,25 +32,25 @@
         alt="Major League Hacking 2024 Hackathon Season" style="width: 100%" /></a>
   </nav>
   <div class="flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-enchanted-forest bg-center-bottom">
-    <div>
-      <div class="flex items-center gap-2.5">
+    <div class="flex flex-col gap-6 lg:gap-0">
+      <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-2.5">
         <img src="img/logo.png" alt="The logo of DandyHacks 2023" />
-        <div class="flex flex-col items-start gap-4">
-          <h1 class="text-6xl">DandyHacks &OpenCurlyQuote;23</h1>
-          <h2 class="text-4xl text-purple">November 3-5</h2>
+        <div class="flex flex-col items-center lg:items-start gap-4">
+          <h1 class="text-4xl lg:text-6xl">DandyHacks &OpenCurlyQuote;23</h1>
+          <h2 class="text-2xl lg:text-4xl text-purple">November 3-5</h2>
         </div>
       </div>
-      <div class="flex items-center justify-center font-bold gap-7">
-        <a class="flex items-center justify-center px-10 py-5 text-2xl rounded-full text-deep-purple bg-lavender" href="https://docs.google.com/forms/d/e/1FAIpQLSf0fuT8o8gTrG9d8flxtpRD1JkOzHu8tEXG-wXM3KiNzhHRyw/viewform?usp=sf_link" target="_blank">Register</a>
-        <a class="flex items-center justify-center px-10 py-5 text-2xl rounded-full text-deep-purple bg-purple" href="https://discord.gg/SbNBkUK6Cr" target="_blank">Join Discord</a>
+      <div class="flex flex-col items-center justify-center font-bold lg:flex-row gap-7">
+        <a class="flex items-center justify-center px-6 py-4 text-xl rounded-full lg:px-10 lg:py-5 lg:text-2xl text-deep-purple bg-lavender" href="https://docs.google.com/forms/d/e/1FAIpQLSf0fuT8o8gTrG9d8flxtpRD1JkOzHu8tEXG-wXM3KiNzhHRyw/viewform?usp=sf_link" target="_blank">Register</a>
+        <a class="flex items-center justify-center px-6 py-4 text-xl rounded-full lg:px-10 lg:py-5 lg:text-2xl text-deep-purple bg-purple" href="https://discord.gg/SbNBkUK6Cr" target="_blank">Join Discord</a>
       </div>
     </div>
   </div>
   <div class="flex flex-row items-center justify-center bg-violet gap-[77px]">
-    <img class="self-start" src="img/sticker2.png" />
-    <div class="flex-[0_0_454px] flex flex-col gap-[53px] mb-[150px]">
-      <h2 class="text-5xl">What is DandyHacks?</h2>
-      <div class="text-xl">
+    <img class="hidden lg:self-start lg:block" src="img/sticker2.png" />
+    <div class="px-9 lg:px-0 lg:flex-[0_0_454px] flex flex-col gap-7 lg:gap-14 mb-16 lg:mb-[150px]">
+      <h2 class="text-2xl lg:text-5xl">What is DandyHacks?</h2>
+      <div class="text-base lg:text-xl">
         <p>
           DandyHacks is the University of Rochester’s annual 42-hour long
           hackathon. This year will be our 11th anniversary, and we’re so excited
@@ -67,12 +67,12 @@
         </p>
       </div>
     </div>
-    <img class="relative b-[150px]" src="img/sticker1.png" />
+    <img class="hidden lg:block lg:relative b-[150px]" src="img/sticker1.png" />
   </div>
-  <div class="bg-repeat-y bg-center-top bg-fireflies">
-    <div class="flex flex-col items-center py-24 box-border gap-20">
-      <h2 class="text-5xl">FAQ</h2>
-      <div class="flex flex-col gap-5">
+  <div class="px-5 lg:bg-repeat-y lg:bg-center-top lg:bg-fireflies lg:px-0">
+    <div class="flex flex-col items-center py-24 box-border gap-12 lg:gap-20">
+      <h2 class="text-5xl">FAQS</h2>
+      <div class="flex flex-col px-10 py-4 lg:py-0 gap-5 lg:px-0">
         <details>
           <summary>
             What is a hackathon?
@@ -160,7 +160,7 @@
         </details>
       </div>
     </div>
-    <div class="flex flex-col items-center mb-24 gap-20">
+    <div class="flex-col items-center hidden mb-24 lg:flex gap-20">
       <h2 class="text-5xl">Sponsoring</h2>
       <div class="flex flex-row gap-24">
         <div class="flex flex-col w-[434px] bg-violet rounded-3xl p-12 text-xl">
@@ -194,9 +194,9 @@
       </div>
     </div>
   </div>
-  <footer class="flex items-center justify-between px-24 py-12 bg-groundboi bg-no-repeat bg-center-top bg-[length:344px_auto] text-xl">
+  <footer class="flex gap-8 lg:gap-0 flex-col lg:flex-row items-center justify-between lg:px-24 lg:py-12 lg:bg-groundboi lg:bg-no-repeat lg:bg-center-top lg:bg-[length:344px_auto] text-xl">
     <div class="flex flex-col items-center gap-5">
-      <span class="font-bold">greetings@dandyhacks.net</span>
+      <span class="hidden font-bold lg:inline">greetings@dandyhacks.net</span>
       <div class="flex gap-2.5 items-center">
         <a href="mailto:greetings@dandyhacks.net"><img src="img/social/mail.svg"></a>
         <a href="https://www.instagram.com/dandyhacks"><img src="img/social/instagram.svg"></a>
@@ -204,7 +204,7 @@
         <a href="https://twitter.com/dandyhacks"><img src="img/social/twitter.svg"></a>
       </div>
     </div>
-    <div class="flex flex-col items-center gap-5">
+    <div class="flex flex-col items-center gap-5 mb-5 lg:mb-0">
       <a class="font-bold" href="http://mlh.io/code-of-conduct" target="_blank"><span>MLH Code of Conduct</span></a>
       <span>© 2023 DandyHacks</span>
     </div>

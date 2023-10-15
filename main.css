@@ -27,7 +27,7 @@
 
 @layer utilities {
   details {
-    @apply w-[923px] bg-purple text-deep-purple rounded-[30px] py-2.5 px-12;
+    @apply lg:w-[923px] bg-purple text-deep-purple rounded-[30px] py-2.5 lg:px-12 px-4;
   }
 
   details summary {
