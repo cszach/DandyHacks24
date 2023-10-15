@@ -13,11 +13,11 @@ module.exports = {
       'plus-icon': "url('img/icons/plus.png')",
       'groundboi': "url('img/sticker2-no_border.png')",
     },
-    backgroundPosition: {
-      'center-top': 'center top',
-      'center-bottom': 'center bottom',
-    },
     extend: {
+      backgroundPosition: {
+        'center-top': 'center top',
+        'center-bottom': 'center bottom',
+      },
       colors: {
         'lavender': '#e5ccff',
         'purple': '#b673eb',
