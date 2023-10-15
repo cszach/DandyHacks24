@@ -2,13 +2,6 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    colors: {
-      'lavender': '#e5ccff',
-      'purple': '#b673eb',
-      'deep-purple': '#1b002c',
-      'violet': '#5e38be',
-      'indigo': '#241d63'
-    },
     fontFamily: {
       'sans': ['"Fivo Sans"', 'sans-serif'],
       'display': ['"Katahdin Round"', 'sans-serif'],
@@ -24,7 +17,15 @@ module.exports = {
       'center-top': 'center top',
       'center-bottom': 'center bottom',
     },
-    extend: {},
+    extend: {
+      colors: {
+        'lavender': '#e5ccff',
+        'purple': '#b673eb',
+        'deep-purple': '#1b002c',
+        'violet': '#5e38be',
+        'indigo': '#241d63'
+      },
+    },
   },
   plugins: [],
 };
