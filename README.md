@@ -19,6 +19,15 @@ Just start a local server! e.g.
 python3 -m http.server
 ```
 
+## 🚧 Development
+
+When developing the website, in addition to starting a local server like in the
+above step, you also need to build TailwindCSS:
+
+```shell
+npm run tailwindcss
+```
+
 ## 🌳 Branches
 
 - `dev`: the main development branch; all code gets branched from and merged
@@ -43,3 +52,4 @@ website. Please see [the final website project][project] for task tracking.
 👨‍💻 Alvin  
 👨‍💻 Tom  
 👨‍💻 Anthony
+👨‍💻 Farouq
