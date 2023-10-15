@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigationLinks = navBar.querySelectorAll('li');
     const hamburgerCheckbox = navBar.querySelector('.peer');
 
+    if (hamburgerCheckbox.checked) {
+        document.body.classList.add('overflow-hidden');
+    }
+
     // Hamburger navigation
 
     navigationLinks.forEach(navigationLink => {
