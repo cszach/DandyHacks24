@@ -8,10 +8,8 @@ Rochester's premier hackathon. Go Yellowjackets! 🐝
 Our tech stack is optimized for the best speed:
 
 - HTML
-- CSS
+- TailwindCSS
 - [Vanilla JS](http://vanilla-js.com/)
-
-We are considering TailwindCSS.
 
 ## 🚀 Deploy
 

@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DandyHacks 2023</title>
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
-<body>
-  <nav>
-    <h3>DandyHacks &OpenCurlyQuote;23</h3>
-    <div>
+<body class="font-sans text-lavender bg-deep-purple">
+  <nav class="absolute flex flex-row items-center justify-between flex-none w-full px-12 py-5 bg-deep-purple">
+    <h3 class="text-2xl">DandyHacks &OpenCurlyQuote;23</h3>
+    <div class="flex flex-row items-start font-bold gap-16">
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
       <a href="#sponsoring">Sponsoring</a>
@@ -31,37 +31,34 @@
         src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
         alt="Major League Hacking 2024 Hackathon Season" style="width: 100%" /></a>
   </nav>
-  <section class="landing">
-    <div class="container">
-      <div>
-        <div class="hero">
-          <img src="img/logo.png" alt="The logo of DandyHacks 2023" />
-          <div>
-            <h1>DandyHacks &OpenCurlyQuote;23</h1>
-            <h2>November 3-5</h2>
-          </div>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf0fuT8o8gTrG9d8flxtpRD1JkOzHu8tEXG-wXM3KiNzhHRyw/viewform?usp=sf_link" target="_blank">Register</a>
-          <a href="https://discord.gg/SbNBkUK6Cr" target="_blank">Join Discord</a>
+  <div class="flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-enchanted-forest bg-center-bottom">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <img src="img/logo.png" alt="The logo of DandyHacks 2023" />
+        <div class="flex flex-col items-start gap-4">
+          <h1 class="text-6xl">DandyHacks &OpenCurlyQuote;23</h1>
+          <h2 class="text-4xl text-purple">November 3-5</h2>
         </div>
       </div>
+      <div class="flex items-center justify-center font-bold gap-7">
+        <a class="flex items-center justify-center px-10 py-5 text-2xl rounded-full text-deep-purple bg-lavender" href="https://docs.google.com/forms/d/e/1FAIpQLSf0fuT8o8gTrG9d8flxtpRD1JkOzHu8tEXG-wXM3KiNzhHRyw/viewform?usp=sf_link" target="_blank">Register</a>
+        <a class="flex items-center justify-center px-10 py-5 text-2xl rounded-full text-deep-purple bg-purple" href="https://discord.gg/SbNBkUK6Cr" target="_blank">Join Discord</a>
+      </div>
     </div>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <img src="img/sticker2.png" />
-      <div>
-        <h2>What is DandyHacks?</h2>
+  </div>
+  <div class="flex flex-row items-center justify-center bg-violet gap-[77px]">
+    <img class="self-start" src="img/sticker2.png" />
+    <div class="flex-[0_0_454px] flex flex-col gap-[53px] mb-[150px]">
+      <h2 class="text-5xl">What is DandyHacks?</h2>
+      <div class="text-xl">
         <p>
           DandyHacks is the University of Rochester’s annual 42-hour long
           hackathon. This year will be our 11th anniversary, and we’re so excited
           to hold this amazing milestone in-person! As a fully student-led
           organization at a tier 1 research university, we embody our school’s
           values, encouraging participants to question the world and learn more.
-        </p>
-        <p>
+          <br/>
+          <br/>
           DandyHacks is very beginner-friendly, and we welcome students from all
           backgrounds and majors. Participating in DandyHacks is not just about
           winning; it is about collaborating with peers, learning from mentors,
@@ -69,22 +66,28 @@
           on Nov 3-5 in the Feldman Ballroom. We hope to see you there!
         </p>
       </div>
-      <img src="img/sticker1.png" />
     </div>
-  </section>
-  <section class="faq-and-sponsoring" id="faq">
-    <div class="faq-container">
-      <h2>FAQ</h2>
-      <div class="buttons">
+    <img class="relative b-[150px]" src="img/sticker1.png" />
+  </div>
+  <div class="bg-repeat-y bg-center-top bg-fireflies">
+    <div class="flex flex-col items-center py-24 box-border gap-20">
+      <h2 class="text-5xl">FAQ</h2>
+      <div class="flex flex-col gap-5">
         <details>
-          <summary>What is a hackathon?</summary>
+          <summary>
+            What is a hackathon?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             A hackathon is an event in which people meet to collaboratively
             build their ideas using technology.
           </p>
         </details>
         <details>
-          <summary>Who is eligible to participate?</summary>
+          <summary>
+            Who is eligible to participate?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             Any graduate or undergraduate student over the age of 18 enrolled in
             a North American institution of higher education is eligible. All hackers must be
@@ -92,7 +95,10 @@
           </p>
         </details>
         <details>
-          <summary>Do I have to pay to participate?</summary>
+          <summary>
+            Do I have to pay to participate?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             Hackers do not have to pay to participate. Hackers just need to
             register and check-in upon arrival. Registration will open up in
@@ -102,7 +108,10 @@
           </p>
         </details>
         <details>
-          <summary>Will the hackathon be in-person or virtual?</summary>
+          <summary>
+            Will the hackathon be in-person or virtual?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             The hackathon will be fully in-person with a couple online
             workshops.
@@ -111,13 +120,17 @@
         <details>
           <summary>
             What safety protocols are in place to protect the community?
+            <img src="img/icons/plus.png" />
           </summary>
           <p>
             <a href="https://www.rochester.edu/coronavirus-update/">University of Rochester COVID-19 protocols</a>.
           </p>
         </details>
         <details>
-          <summary>Will I work individually or with a team?</summary>
+          <summary>
+            Will I work individually or with a team?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             You can work individually or with a team. Each team can have a
             maximum of 4 people, and don’t worry if you don’t have a team yet!
@@ -125,14 +138,20 @@
           </p>
         </details>
         <details>
-          <summary>Can I start hacking before the event?</summary>
+          <summary>
+            Can I start hacking before the event?
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             You may not start hacking before the event, but you can start
             planning and gathering resources.
           </p>
         </details>
         <details>
-          <summary>I still have questions…</summary>
+          <summary>
+            I still have questions…
+            <img src="img/icons/plus.png" />
+          </summary>
           <p>
             Reach out to us at greetings@dandyhacks.net or reach out to us on
             Instagram
@@ -141,26 +160,22 @@
         </details>
       </div>
     </div>
-  <!-- </section>
-  <section class="sponsoring" id="sponsoring"> -->
-    <div class="sponsoring-container">
-      <h2>Sponsoring</h2>
-      <div>
-        <div>
-          <h3>What does a sponsor do?</h3>
-          <p>
-            Sponsors enable us to:
-          <ul>
-            <li>Keep the entire event free for all of our attendees!</li>
-            <li>Send us mentors and workshop leaders and gain
-              recognition from our hackers</li>
+    <div class="flex flex-col items-center mb-24 gap-20">
+      <h2 class="text-5xl">Sponsoring</h2>
+      <div class="flex flex-row gap-24">
+        <div class="flex flex-col w-[434px] bg-violet rounded-3xl p-12 text-xl">
+          <h3 class="text-3xl text-center pb-7">What does a sponsor do?</h3>
+          <p>Sponsors enable us to:</p>
+          <ul class="list-disc list-inside">
+            <li>Keep the entire event <b>free for all of our attendees</b></li>
+            <li>Send us mentors and workshop leaders and <b>gain recognition
+                from our hackers</b></li>
           </ul>
-          </p>
         </div>
-        <div>
-          <h3>Why sponsor?</h3>
+        <div class="flex flex-col w-[434px] bg-violet rounded-3xl p-12 text-xl">
+          <h3 class="text-3xl text-center pb-7">Why sponsor?</h3>
           <p>As a sponsor, you will be able to:</p>
-          <ul>
+          <ul class="list-disc list-inside">
             <li>
               Connect with top students, and get early access to resumes and
               portfolios.
@@ -178,19 +193,19 @@
         </div>
       </div>
     </div>
-  </section>
-  <footer>
-    <div class="contact">
-      <span>greetings@dandyhacks.net</span>
-      <div class="socials">
+  </div>
+  <footer class="flex items-center justify-between px-24 py-12 bg-groundboi bg-no-repeat bg-center-top bg-[length:344px_auto] text-xl">
+    <div class="flex flex-col items-center gap-5">
+      <span class="font-bold">greetings@dandyhacks.net</span>
+      <div class="flex gap-2.5 items-center">
         <a href="mailto:greetings@dandyhacks.net"><img src="img/social/mail.svg"></a>
         <a href="https://www.instagram.com/dandyhacks"><img src="img/social/instagram.svg"></a>
         <a href="https://www.facebook.com/DandyHacks"><img src="img/social/facebook.svg"></a>
         <a href="https://twitter.com/dandyhacks"><img src="img/social/twitter.svg"></a>
       </div>
     </div>
-    <div class="coc">
-      <a href="http://mlh.io/code-of-conduct" target="_blank"><span>MLH Code of Conduct</span></a>
+    <div class="flex flex-col items-center gap-5">
+      <a class="font-bold" href="http://mlh.io/code-of-conduct" target="_blank"><span>MLH Code of Conduct</span></a>
       <span>© 2023 DandyHacks</span>
     </div>
   </footer>

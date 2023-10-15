@@ -1,0 +1,15 @@
+{
+  "name": "dandyhacks23",
+  "version": "0.1.0",
+  "description": "The website for DandyHacks 2023.",
+  "main": "index.js",
+  "scripts": {
+    "tailwindcss": "npx tailwindcss -i main.css -o styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
