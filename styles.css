@@ -671,6 +671,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
 .float-right {
   float: right;
 }
