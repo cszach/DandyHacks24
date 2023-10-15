@@ -8,10 +8,8 @@ Rochester's premier hackathon. Go Yellowjackets! 🐝
 Our tech stack is optimized for the best speed:
 
 - HTML
-- CSS
+- TailwindCSS
 - [Vanilla JS](http://vanilla-js.com/)
-
-We are considering TailwindCSS.
 
 ## 🚀 Deploy
 
@@ -19,6 +17,15 @@ Just start a local server! e.g.
 
 ```shell
 python3 -m http.server
+```
+
+## 🚧 Development
+
+When developing the website, in addition to starting a local server like in the
+above step, you also need to build TailwindCSS:
+
+```shell
+npm run tailwindcss
 ```
 
 ## 🌳 Branches
@@ -45,3 +52,4 @@ website. Please see [the final website project][project] for task tracking.
 👨‍💻 Alvin  
 👨‍💻 Tom  
 👨‍💻 Anthony
+👨‍💻 Farouq
