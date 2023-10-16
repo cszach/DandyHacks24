@@ -2053,11 +2053,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 2.25rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -2073,8 +2068,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.25rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-left {
