@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.wrapper');
     const navBar = document.querySelector('nav');
     const navigationLinks = navBar.querySelectorAll('li');
     const hamburgerCheckbox = navBar.querySelector('.peer');
@@ -17,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar appears on scroll down and hides on scroll up
 
-    let lastScrollY = window.scrollY;
+    let lastScrollY = wrapper.scrollTop;
 
-    window.addEventListener('scroll', () => {
-        window.scrollY - lastScrollY > 0 ? hideNavBar() : showNavBar();
-        lastScrollY = window.scrollY;
+    wrapper.addEventListener('scroll', () => {
+        wrapper.scrollTop - lastScrollY > 0 ? hideNavBar() : showNavBar();
+        lastScrollY = wrapper.scrollTop;
     });
 
     function hideNavBar() {

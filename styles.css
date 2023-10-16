@@ -639,8 +639,12 @@ h1, h2, h3, h4, h5, h6 {
   inset: -0.25rem;
 }
 
-.bottom-16 {
-  bottom: 4rem;
+.-bottom-full {
+  bottom: -100%;
+}
+
+.-top-16 {
+  top: -4rem;
 }
 
 .end-1 {
@@ -820,6 +824,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -1887,8 +1895,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(94 56 190 / var(--tw-bg-opacity));
 }
 
-.bg-enchanted-forest {
-  background-image: url('img/website-bg.svg');
+.bg-enchanted-forest-layer-1 {
+  background-image: url('img/hero-bg/layer1.svg');
+}
+
+.bg-enchanted-forest-layer-2 {
+  background-image: url('img/hero-bg/layer2.svg');
+}
+
+.bg-enchanted-forest-layer-3 {
+  background-image: url('img/hero-bg/layer3.svg');
+}
+
+.bg-enchanted-forest-layer-4 {
+  background-image: url('img/hero-bg/layer4.svg');
 }
 
 .decoration-slice {
@@ -2650,6 +2670,38 @@ canvas {
   z-index: 10;
 }
 
+/* Parallax effect */
+
+.wrapper {
+  perspective: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.parallax {
+  transform-style: preserve-3d;
+}
+
+.parallax > div.bg-cover {
+  z-index: -1;
+}
+
+.parallax > div.bg-enchanted-forest-layer-1 {
+  transform: translateZ(-20px) scale(3);
+}
+
+.parallax > div.bg-enchanted-forest-layer-2 {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.parallax > div.bg-enchanted-forest-layer-3 {
+  transform: translateZ(-10px) scale(2);
+}
+
+.parallax > div.bg-enchanted-forest-layer-4 {
+  transform: translateZ(-5px) scale(1.5);
+}
+
 @font-face {
   font-family: "Katahdin Round";
 
@@ -2832,10 +2884,6 @@ canvas {
     .md\:max-lg\:h-1\/2 {
       height: 50%;
     }
-
-    .md\:max-lg\:gap-8 {
-      gap: 2rem;
-    }
   }
 }
 
@@ -2844,8 +2892,8 @@ canvas {
     position: relative;
   }
 
-  .lg\:bottom-\[150px\] {
-    bottom: 150px;
+  .lg\:-top-\[150px\] {
+    top: -150px;
   }
 
   .lg\:mb-0 {
@@ -2888,10 +2936,6 @@ canvas {
     gap: 5rem;
   }
 
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
   .lg\:self-start {
     align-self: flex-start;
   }
@@ -2912,10 +2956,6 @@ canvas {
     background-repeat: no-repeat;
   }
 
-  .lg\:p-0 {
-    padding: 0px;
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2924,11 +2964,6 @@ canvas {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .lg\:px-24 {
@@ -2981,6 +3016,16 @@ canvas {
   @media (min-width: 1024px) {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @media not all and (min-width: 1024px) {
+    @media (orientation: portrait) {
+      .md\:max-lg\:portrait\:h-3\/6 {
+        height: 50%;
+      }
     }
   }
 }
