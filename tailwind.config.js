@@ -12,6 +12,10 @@ module.exports = {
       'fireflies': "url('img/website-bg2.png')",
       'plus-icon': "url('img/icons/plus.png')",
       'groundboi': "url('img/sticker2-no_border.png')",
+      'enchanted-forest-layer-1': "url('img/hero-bg/layer1.svg')",
+      'enchanted-forest-layer-2': "url('img/hero-bg/layer2.svg')",
+      'enchanted-forest-layer-3': "url('img/hero-bg/layer3.svg')",
+      'enchanted-forest-layer-4': "url('img/hero-bg/layer4.svg')",
     },
     extend: {
       backgroundPosition: {

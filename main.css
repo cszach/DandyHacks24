@@ -49,4 +49,36 @@
     position: relative;
     z-index: 10;
   }
+
+  /* Parallax effect */
+
+  .wrapper {
+    perspective: 10px;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .parallax {
+    transform-style: preserve-3d;
+  }
+
+  .parallax > div.bg-cover {
+    z-index: -1;
+  }
+
+  .parallax > div.bg-enchanted-forest-layer-1 {
+    transform: translateZ(-20px) scale(3);
+  }
+
+  .parallax > div.bg-enchanted-forest-layer-2 {
+    transform: translateZ(-15px) scale(2.5);
+  }
+
+  .parallax > div.bg-enchanted-forest-layer-3 {
+    transform: translateZ(-10px) scale(2);
+  }
+
+  .parallax > div.bg-enchanted-forest-layer-4 {
+    transform: translateZ(-5px) scale(1.5);
+  }
 }
