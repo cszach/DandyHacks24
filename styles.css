@@ -663,6 +663,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
 }
 
+.-top-20 {
+  top: -5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1417,10 +1421,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .justify-items-stretch {
   justify-items: stretch;
-}
-
-.gap-11 {
-  gap: 2.75rem;
 }
 
 .gap-12 {
@@ -2969,20 +2969,16 @@ canvas {
     gap: 0px;
   }
 
+  .lg\:gap-11 {
+    gap: 2.75rem;
+  }
+
   .lg\:gap-14 {
     gap: 3.5rem;
   }
 
   .lg\:gap-20 {
     gap: 5rem;
-  }
-
-  .lg\:gap-11 {
-    gap: 2.75rem;
-  }
-
-  .lg\:self-auto {
-    align-self: auto;
   }
 
   .lg\:self-start {

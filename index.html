@@ -17,6 +17,7 @@
       <img class="md:hidden" src="img/icons/hamburger.png" />
       <ul class="fixed top-0 right-0 z-30 flex flex-col justify-end h-screen pb-32 text-3xl font-bold transition-transform gap-8 md:flex-row md:text-xl px-9 md:p-0 w-72 bg-violet peer-checked:translate-x-0 translate-x-72 md:bg-deep-purple md:translate-x-0 md:w-fit md:h-fit md:relative md:gap-16 md:transition-none">
         <li class="text-right"><a href="#about">About</a></li>
+        <li class="text-right"><a href="#tracks">Tracks</a></li>
         <li class="text-right"><a href="#faq">FAQ</a></li>
         <li class="hidden text-right lg:block"><a href="#sponsoring">Sponsoring</a></li>
       </ul>
@@ -59,10 +60,12 @@
       </div>
     </div>
     <div class="flex flex-row items-center justify-center gap-[77px] relative">
-      <div id="about" class="absolute -top-16 lg:-top-[150px]"></div>
       <img class="hidden lg:self-start lg:block" src="img/sticker2.png" />
       <div class="px-9 lg:px-0 lg:flex-[0_0_454px] flex flex-col gap-7 lg:gap-14 mb-16 lg:mb-[150px]">
-        <h2 class="text-2xl lg:text-5xl">What is DandyHacks?</h2>
+        <h2 class="text-2xl lg:text-5xl">
+          <div id="about" class="absolute -top-20"></div>
+          What is DandyHacks?
+        </h2>
         <div class="text-base lg:text-xl">
           <p>
             DandyHacks is the University of Rochester’s annual 42-hour long
@@ -84,7 +87,10 @@
     </div>
     <div class="relative flex flex-row items-center justify-center text-xl bg-violet">
       <div class="flex flex-col grow-0 items-center w-full gap-7 lg:gap-11 px-9 lg:px-0 lg:w-[999px] box-border text-base lg:text-xl">
-        <h2 class="text-5xl">Tracks</h2>
+        <h2 class="text-5xl">
+          <div id="tracks" class="absolute -top-20"></div>
+          Tracks
+        </h2>
         <p>
           Choose one track to submit your project into. Each track will have
           three top winners, and each project may only win in one track. Each
@@ -209,8 +215,11 @@
           </details>
         </div>
       </div>
-      <div id="sponsoring" class="flex-col items-center hidden mb-24 pointer-events-none lg:flex gap-20">
-        <h2 class="text-5xl">Sponsoring</h2>
+      <div class="flex-col items-center hidden mb-24 pointer-events-none lg:flex gap-20">
+        <h2 class="text-5xl">
+          <div id="sponsoring" class="absolute -top-20"></div>
+          Sponsoring
+        </h2>
         <div class="flex flex-row gap-24">
           <div class="flex flex-col w-[434px] bg-violet rounded-3xl p-12 text-xl">
             <h3 class="text-3xl text-center pb-7">What does a sponsor do?</h3>
