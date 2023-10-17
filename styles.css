@@ -643,8 +643,8 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -100%;
 }
 
-.-top-16 {
-  top: -4rem;
+.-top-20 {
+  top: -5rem;
 }
 
 .end-1 {
@@ -661,10 +661,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-0 {
   top: 0px;
-}
-
-.-top-20 {
-  top: -5rem;
 }
 
 .isolate {
@@ -2106,12 +2102,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.25rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-left {
@@ -2927,10 +2923,6 @@ canvas {
 @media (min-width: 1024px) {
   .lg\:relative {
     position: relative;
-  }
-
-  .lg\:-top-\[150px\] {
-    top: -150px;
   }
 
   .lg\:mb-0 {
