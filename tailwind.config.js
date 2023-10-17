@@ -8,7 +8,6 @@ module.exports = {
       'body': ['"Fivo Sans"', 'sans-serif']
     },
     backgroundImage: {
-      'enchanted-forest': "url('img/website-bg.svg')",
       'fireflies': "url('img/website-bg2.png')",
       'plus-icon': "url('img/icons/plus.png')",
       'groundboi': "url('img/sticker2-no_border.png')",
