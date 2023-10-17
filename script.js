@@ -4,16 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigationLinks = navBar.querySelectorAll('li');
     const hamburgerCheckbox = navBar.querySelector('.peer');
 
-    if (hamburgerCheckbox.checked) {
-        document.body.classList.add('overflow-hidden');
-    }
-
     // Hamburger navigation
 
     navigationLinks.forEach(navigationLink => {
-      navigationLink.addEventListener('click', () => {
-          closeNavigationMenu();
-      });
+        navigationLink.addEventListener('click', () => {
+            hamburgerCheckbox.checked = false;
+        });
     });
 
     // Navbar appears on scroll down and hides on scroll up
@@ -35,26 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navBar.classList.remove('-translate-y-full');
     }
 
-    // Disable scrolling when navigation menu is visible
-
-    hamburgerCheckbox.addEventListener('change', (e) => {
-        if (e.target.checked) {
-            document.body.classList.add('overflow-hidden');
-        }
-    });
-
     // Close navigation menu when the dark overlay is clicked on
 
     const darkOverlay = navBar.querySelector('.bg-black');
 
     darkOverlay.addEventListener('click', () => {
-        closeNavigationMenu();
-    });
-
-    function closeNavigationMenu() {
-        document.body.classList.remove('overflow-hidden');
         hamburgerCheckbox.checked = false;
-    }
+    });
 
     // particles.js
 
