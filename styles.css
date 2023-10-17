@@ -707,12 +707,26 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
 
 .mb-24 {
   margin-bottom: 6rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -826,6 +840,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 2rem;
 }
 
+.h-\[448px\] {
+  height: 448px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -834,12 +852,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-72 {
   width: 18rem;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[298px\] {
+  width: 298px;
 }
 
 .w-\[434px\] {
@@ -872,6 +898,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .grow {
   flex-grow: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
 }
 
 .table-auto {
@@ -1387,6 +1417,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .gap-12 {
@@ -2033,6 +2067,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2074,10 +2112,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pb-7 {
   padding-bottom: 1.75rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -2919,6 +2953,10 @@ canvas {
     display: flex;
   }
 
+  .lg\:w-\[999px\] {
+    width: 999px;
+  }
+
   .lg\:flex-\[0_0_454px\] {
     flex: 0 0 454px;
   }
@@ -2937,6 +2975,14 @@ canvas {
 
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:gap-11 {
+    gap: 2.75rem;
+  }
+
+  .lg\:self-auto {
+    align-self: auto;
   }
 
   .lg\:self-start {
