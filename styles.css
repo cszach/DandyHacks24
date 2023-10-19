@@ -2171,6 +2171,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 2.25rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -2196,6 +2201,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -3138,6 +3151,10 @@ canvas {
     padding-bottom: 1.25rem;
   }
 
+  .lg\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3169,6 +3186,20 @@ canvas {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:self-start {
+    align-self: flex-start;
   }
 }
 
