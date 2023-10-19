@@ -41,5 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // particles.js
 
-    particlesJS.load('faq', 'assets/particlesjs-config.json');
+    particlesJS.load('particles-js', 'assets/particlesjs-config.json');
 });

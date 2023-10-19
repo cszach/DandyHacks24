@@ -844,6 +844,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -886,6 +890,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .flex-none {
@@ -934,6 +942,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.origin-center {
+  transform-origin: center;
 }
 
 .-translate-y-full {
@@ -1427,6 +1439,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-items: stretch;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -1771,6 +1787,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1949,6 +1969,38 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('img/hero-bg/layer4.svg');
 }
 
+.bg-prize-acer-nitro-monitor {
+  background-image: url('img/prizes/acer_nitro_monitor.png');
+}
+
+.bg-prize-airtag {
+  background-image: url('img/prizes/airtag.png');
+}
+
+.bg-prize-amazon-fire-stick {
+  background-image: url('img/prizes/amazon_fire_stick.png');
+}
+
+.bg-prize-desk-lamp {
+  background-image: url('img/prizes/desk_lamp.png');
+}
+
+.bg-prize-echo-dot {
+  background-image: url('img/prizes/echo_dot.png');
+}
+
+.bg-prize-jbl-flip-5 {
+  background-image: url('img/prizes/jbl_flip_5.png');
+}
+
+.bg-prize-razer-blackwidow {
+  background-image: url('img/prizes/razer_blackwidow.png');
+}
+
+.bg-prize-wireless-photo-printer {
+  background-image: url('img/prizes/wireless_photo_printer.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1967,6 +2019,10 @@ h1, h2, h3, h4, h5, h6 {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -2000,6 +2056,22 @@ h1, h2, h3, h4, h5, h6 {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-\[bottom_-12px_right_-16px\] {
+  background-position: bottom -12px right -16px;
+}
+
+.bg-\[bottom_-16px_right_-16px\] {
+  background-position: bottom -16px right -16px;
+}
+
+.bg-\[bottom_-16px_right_0px\] {
+  background-position: bottom -16px right 0px;
+}
+
+.bg-\[bottom_-8px_right_0px\] {
+  background-position: bottom -8px right 0px;
 }
 
 .bg-center-bottom {
@@ -2075,6 +2147,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2093,6 +2169,11 @@ h1, h2, h3, h4, h5, h6 {
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-24 {
@@ -2114,8 +2195,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.75rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -2706,9 +2799,22 @@ canvas {
   left: 0;
 }
 
-#faq > div > * {
+#particles-js > div > * {
   position: relative;
   z-index: 10;
+}
+
+.hover-scale, details {
+  transform-origin: center;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover-scale:hover, details:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 /* Parallax effect */
@@ -2801,6 +2907,12 @@ canvas {
   }
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2854,6 +2966,10 @@ canvas {
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:w-fit {
@@ -2953,6 +3069,10 @@ canvas {
     display: flex;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:w-\[999px\] {
     width: 999px;
   }
@@ -3031,6 +3151,10 @@ canvas {
     padding-bottom: 1.25rem;
   }
 
+  .lg\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3062,6 +3186,20 @@ canvas {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:self-start {
+    align-self: flex-start;
   }
 }
 
