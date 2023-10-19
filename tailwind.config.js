@@ -15,6 +15,14 @@ module.exports = {
       'enchanted-forest-layer-2': "url('img/hero-bg/layer2.svg')",
       'enchanted-forest-layer-3': "url('img/hero-bg/layer3.svg')",
       'enchanted-forest-layer-4': "url('img/hero-bg/layer4.svg')",
+      'prize-acer-nitro-monitor': "url('img/prizes/acer_nitro_monitor.png')",
+      'prize-airtag': "url('img/prizes/airtag.png')",
+      'prize-amazon-fire-stick': "url('img/prizes/amazon_fire_stick.png')",
+      'prize-desk-lamp': "url('img/prizes/desk_lamp.png')",
+      'prize-echo-dot': "url('img/prizes/echo_dot.png')",
+      'prize-jbl-flip-5': "url('img/prizes/jbl_flip_5.png')",
+      'prize-razer-blackwidow': "url('img/prizes/razer_blackwidow.png')",
+      'prize-wireless-photo-printer': "url('img/prizes/wireless_photo_printer.png')",
     },
     extend: {
       backgroundPosition: {
