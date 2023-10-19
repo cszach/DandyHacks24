@@ -45,7 +45,7 @@
     left: 0;
   }
 
-  #faq > div > * {
+  #particles-js > div > * {
     position: relative;
     z-index: 10;
   }

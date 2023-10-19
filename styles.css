@@ -844,6 +844,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -886,6 +890,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .flex-none {
@@ -1431,6 +1439,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-items: stretch;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -1775,6 +1787,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1953,6 +1969,38 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('img/hero-bg/layer4.svg');
 }
 
+.bg-prize-acer-nitro-monitor {
+  background-image: url('img/prizes/acer_nitro_monitor.png');
+}
+
+.bg-prize-airtag {
+  background-image: url('img/prizes/airtag.png');
+}
+
+.bg-prize-amazon-fire-stick {
+  background-image: url('img/prizes/amazon_fire_stick.png');
+}
+
+.bg-prize-desk-lamp {
+  background-image: url('img/prizes/desk_lamp.png');
+}
+
+.bg-prize-echo-dot {
+  background-image: url('img/prizes/echo_dot.png');
+}
+
+.bg-prize-jbl-flip-5 {
+  background-image: url('img/prizes/jbl_flip_5.png');
+}
+
+.bg-prize-razer-blackwidow {
+  background-image: url('img/prizes/razer_blackwidow.png');
+}
+
+.bg-prize-wireless-photo-printer {
+  background-image: url('img/prizes/wireless_photo_printer.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1971,6 +2019,10 @@ h1, h2, h3, h4, h5, h6 {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -2004,6 +2056,22 @@ h1, h2, h3, h4, h5, h6 {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-\[bottom_-12px_right_-16px\] {
+  background-position: bottom -12px right -16px;
+}
+
+.bg-\[bottom_-16px_right_-16px\] {
+  background-position: bottom -16px right -16px;
+}
+
+.bg-\[bottom_-16px_right_0px\] {
+  background-position: bottom -16px right 0px;
+}
+
+.bg-\[bottom_-8px_right_0px\] {
+  background-position: bottom -8px right 0px;
 }
 
 .bg-center-bottom {
@@ -2079,9 +2147,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-5 {
@@ -2116,6 +2193,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-32 {
@@ -2710,7 +2791,7 @@ canvas {
   left: 0;
 }
 
-#faq > div > * {
+#particles-js > div > * {
   position: relative;
   z-index: 10;
 }
@@ -2879,6 +2960,10 @@ canvas {
     height: fit-content;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
@@ -2974,6 +3059,10 @@ canvas {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:w-\[999px\] {
