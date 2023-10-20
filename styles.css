@@ -745,6 +745,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2171,11 +2175,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 2.25rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -2191,6 +2190,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -2203,12 +2211,24 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 8rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -3101,10 +3121,6 @@ canvas {
     gap: 5rem;
   }
 
-  .lg\:self-start {
-    align-self: flex-start;
-  }
-
   .lg\:bg-groundboi {
     background-image: url('img/sticker2-no_border.png');
   }
@@ -3190,10 +3206,6 @@ canvas {
 }
 
 @media (min-width: 1280px) {
-  .xl\:relative {
-    position: relative;
-  }
-
   .xl\:block {
     display: block;
   }
