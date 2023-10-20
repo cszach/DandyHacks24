@@ -2178,8 +2178,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 6rem;
 }
 
-.pt-11 {
-  padding-top: 2.75rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-32 {
@@ -2188,10 +2188,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-left {
@@ -3056,10 +3052,6 @@ canvas {
 
   .lg\:gap-20 {
     gap: 5rem;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
   }
 
   .lg\:bg-deep-purple {
