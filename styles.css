@@ -663,6 +663,26 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-\[41\%\] {
+  left: 41%;
+}
+
+.top-\[74\%\] {
+  top: 74%;
+}
+
+.left-\[42\%\] {
+  left: 42%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -868,6 +888,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[8\%\] {
+  height: 8%;
+}
+
+.h-\[7\%\] {
+  height: 7%;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -890,6 +922,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[8\%\] {
+  width: 8%;
 }
 
 .max-w-7xl {
@@ -2178,8 +2218,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 6rem;
 }
 
-.pt-11 {
-  padding-top: 2.75rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-32 {
@@ -2188,10 +2228,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-left {
@@ -3056,10 +3092,6 @@ canvas {
 
   .lg\:gap-20 {
     gap: 5rem;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
   }
 
   .lg\:bg-deep-purple {
