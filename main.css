@@ -3,39 +3,55 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Katahdin Round";
-  src: url(fonts/katahdin-round/KatahdinRound.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Fivo Sans";
-  font-weight: 400;
-  src: url("fonts/fivo-sans/FivoSans/FivoSans-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Fivo Sans";
+  font-family: "Cerco";
   font-weight: 700;
-  src: url("fonts/fivo-sans/FivoSans/FivoSans-Bold.otf") format("opentype");
+  src: url(fonts/cerco/CercoDEMO-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Cerco";
+  font-weight: 700;
+  font-style: italic;
+  src: url(fonts/cerco/CercoDEMO-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Sonorous";
+  font-weight: 400;
+  src: url(fonts/sonorous/Sonorous.otf) format("opentype");
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display;
+  }
+
+  .white-outline {
+    filter: drop-shadow(8px 0 0 white) drop-shadow(0 8px 0 white)
+      drop-shadow(-8px 0 0 white) drop-shadow(0 -8px 0 white);
   }
 }
 
 @layer utilities {
+  nav {
+    backdrop-filter: blur(10px);
+  }
+
   details {
-    @apply lg:w-[923px] bg-purple text-deep-purple rounded-[30px] py-2.5 lg:px-12 px-4 pointer-events-auto;
+    @apply lg:w-[923px] bg-ice-dream text-bowen-blue rounded-[30px] pointer-events-auto;
   }
 
   details summary {
-    @apply flex items-center justify-between text-2xl font-bold hover:cursor-pointer after:float-right marker:content-none after:content-none after:w-9 after:h-9 after:justify-self-end;
+    @apply flex items-center justify-between text-2xl font-bold hover:cursor-pointer after:float-right marker:content-none after:content-none after:w-9 after:h-9 after:justify-self-end py-2.5 lg:px-12 px-4;
   }
 
   details p {
-    @apply text-2xl;
+    @apply text-2xl py-2.5 lg:px-12 px-4;
   }
 
   canvas {
@@ -45,44 +61,8 @@
     left: 0;
   }
 
-  #particles-js > div > * {
-    position: relative;
-    z-index: 10;
-  }
-
-  .hover-scale, details {
+  .hover-scale,
+  details {
     @apply hover:scale-105 transition-transform origin-center;
-  }
-
-  /* Parallax effect */
-
-  .wrapper {
-    perspective: 10px;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-
-  .parallax {
-    transform-style: preserve-3d;
-  }
-
-  .parallax > div.bg-cover {
-    z-index: -1;
-  }
-
-  .parallax > div.bg-enchanted-forest-layer-1 {
-    transform: translateZ(-20px) scale(3);
-  }
-
-  .parallax > div.bg-enchanted-forest-layer-2 {
-    transform: translateZ(-15px) scale(2.5);
-  }
-
-  .parallax > div.bg-enchanted-forest-layer-3 {
-    transform: translateZ(-10px) scale(2);
-  }
-
-  .parallax > div.bg-enchanted-forest-layer-4 {
-    transform: translateZ(-5px) scale(1.5);
   }
 }
